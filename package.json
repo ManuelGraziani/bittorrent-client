@@ -8,5 +8,9 @@
   "keywords": [],
   "author": "Manuel Graziani",
   "license": "ISC",
-  "description": "A BitTorrent client written with Node.js"
+  "description": "A BitTorrent client written with Node.js",
+  "type": "module",
+  "dependencies": {
+    "bencode": "^4.0.0"
+  }
 }
