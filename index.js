@@ -1,9 +1,10 @@
 import fs from 'fs'
 import bencode from 'bencode'
-import  getPeers from './tracker.js'
+import * as tracker from './tracker.js'
+import * as torrentParser from './torrent-parser.js'
 
-const torrent = bencode.decode(fs.readFileSync('puppy.torrent'))
+const torrent = torrentParser.open('puppy.torrent')
 
-getPeers(torrent, peers => {
+tracker.getPeers(torrent, peers => {
     console.log('list of peers: ', peers)
 })
