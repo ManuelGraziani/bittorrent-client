@@ -11,6 +11,7 @@
   "description": "A BitTorrent client written with Node.js",
   "type": "module",
   "dependencies": {
-    "bencode": "^4.0.0"
+    "bencode": "^4.0.0",
+    "bignum": "^0.13.1"
   }
 }
